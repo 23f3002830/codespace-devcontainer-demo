@@ -12,5 +12,6 @@
       ]
     }
   },
-  "postCreateCommand": "uv pip install fastapi"
+  "onCreateCommand": "pip install uv",
+  "postCreateCommand": "bash -c 'source ~/.bashrc && uv pip install fastapi || pip install fastapi'"
 }
